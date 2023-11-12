@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rental Management System</title>
+</head>
+<body>
+
+    <h1>Rental Management System</h1>
+
+    <h2>User Registration</h2>
+    <form id="registrationForm">
+        <label for="userName">Username:</label>
+        <input type="text" id="userName" required>
+        <label for="userType">User Type:</label>
+        <select id="userType" required>
+            <option value="tenant">Tenant</option>
+            <option value="owner">Property Owner</option>
+        </select>
+        <button type="button" onclick="registerUser()">Register</button>
+    </form>
+    <h2>Add Property</h2>
+    <form id="propertyForm">
+        <label for="propertyInfo">Property Information:</label>
+        <textarea id="propertyInfo" required></textarea>
+        <button type="button" onclick="addProperty()">Add Property</button>
+    </form>
+
+    <h2>Initiate Contract</h2>
+    <form id="contractForm">
+        <label for="propertyAddress">Property Address:</label>
+        <input type="text" id="propertyAddress" required>
+        <label for="startDate">Start Date:</label>
+        <input type="date" id="startDate" required>
+        <label for="endDate">End Date:</label>
+        <input type="date" id="endDate" required>
+        <button type="button" onclick="startContract()">Initiate Contract</button>
+    </form>
+
+    <h2>Complaint</h2>
+    <form id="complaintForm">
+        <label for="complaintDescription">Complaint Description:</label>
+        <textarea id="complaintDescription" required></textarea>
+        <button type="button" onclick="fileComplaint()">File Complaint</button>
+    </form>
+
+    <script src="App.js"></script>
+
+</body>
